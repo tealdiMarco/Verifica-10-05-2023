@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palazzo Vallauri</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/stile.css">
 
-    <!-- LINK -->
 </head>
-<body>
+<body onload="init()">
     <header>
         Palazzo Vallauri
     </header>
@@ -19,19 +20,20 @@
             </header>
             <main>
                 Percorso:<select id="selPercorsi">
+
                 </select>
                 Anno:<input type="number" id="txtAnno">
                 <div>
                     <h3>Sei uno studente?</h3>
-                    <input type="radio">Si
+                    <input type="radio" name="studente">Si
                     <br>
-                    <input type="radio">No
+                    <input type="radio" name="studente">No
                 </div>
                 <div>
                     <h3>Hai l'abbonamento?</h3>
-                    <input type="radio">Si
+                    <input type="radio" name="abbonamento">Si
                     <br>
-                    <input type="radio">No
+                    <input type="radio" name="abbonamento">No
                 </div>
                 <button id="btnAcquista">Acquista</button>
             </main>
